@@ -1,9 +1,12 @@
-﻿namespace SIGEDESP.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace SIGEDESP.Models
 {
-    public class tipoDespesaModel
+    public class TipoDespesaModel
     {
 
         public int Id { get; set; }
+        [Required(ErrorMessage = "Digite o campo da Descrição")]
         public string Descricao { get; set; }
 
     }
