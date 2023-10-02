@@ -15,7 +15,7 @@ namespace SIGEDESP.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<tipoDespesaModel> tipoDespesas = _db.tipoDespesas;
+            IEnumerable<tipoDespesaModel> tipoDespesas = _db.Descricoes;
             return View(tipoDespesas);
         }
     }
