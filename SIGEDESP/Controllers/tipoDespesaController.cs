@@ -4,26 +4,31 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace SIGEDESP.Controllers
 {
-    public class tipoDespesaController : Controller
+    public class TipoDespesaController : Controller
     {
         readonly private ApplicationDBContext _db;
         
-        public tipoDespesaController(ApplicationDBContext db)
+        public TipoDespesaController(ApplicationDBContext db)
         {
             _db=db;
         }
 
         public IActionResult Index()
         {
-            IEnumerable<TipoDespesaModel> tipoDespesas = _db.Descricoes;
-            return View(tipoDespesas);
+            IEnumerable<TipoDespesaModel> tipoDespesa = _db.tipoDespesa;
+            return View(tipoDespesa);
+        }
+
+        public IActionResult Cadastrar()
+        {
+            return View();
         }
         [HttpPost]
         public IActionResult Cadastrar(TipoDespesaModel tipoDespesa)
         {
             if (ModelState.IsValid)
             {
-                _db.Descricoes.Add(tipoDespesa);
+                _db.tipoDespesa.Add(tipoDespesa);
                 _db.SaveChanges();
 
                 return RedirectToAction("Index");
@@ -38,7 +43,7 @@ namespace SIGEDESP.Controllers
             {
                 return NotFound();
             }
-            tipoDespesaModel tipoDespesa = _db.Descricoes.FirstOrDefault(x => x.Id == id);
+            TipoDespesaModel tipoDespesa = _db.tipoDespesa.FirstOrDefault(x => x.Id == id);
 
             if (tipoDespesa == null)
             {
@@ -49,6 +54,36 @@ namespace SIGEDESP.Controllers
         }
 
         [HttpPost]
+        public IActionResult Editar(TipoDespesaModel tipoDespesa)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.tipoDespesa.Update(tipoDespesa);
+                _db.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+            return View(tipoDespesa);
+        }
+        [HttpGet]
+
+       public IActionResult Excluir(int? id)
+        {
+            if (id == null || id == 0)
+            {
+                return NotFound();
+            }
+
+            TipoDespesaModel tipoDespesa = _db.tipoDespesa.FirstOrDefault(x => x.Id == id);
+
+            if (tipoDespesa == null)
+            {
+                return NotFound();
+            }
+            return View(tipoDespesa);
+        }
+        [HttpPost]
+
         public IActionResult Excluir(TipoDespesaModel tipoDespesa)
         {
             if (tipoDespesa == null)
@@ -58,7 +93,8 @@ namespace SIGEDESP.Controllers
             _db.tipoDespesa.Remove(tipoDespesa);
             _db.SaveChanges();
 
-            return View(tipoDespesa);
+            return RedirectToAction("Index");
+
         }
     }
 }

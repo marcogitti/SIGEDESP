@@ -6,8 +6,9 @@ namespace SIGEDESP.Models
     {
 
         public int Id { get; set; }
+
         [Required(ErrorMessage = "Digite o campo da Descrição")]
-        public string Descricao { get; set; }
+        public string tipoDespesa { get; set; }
 
     }
 }

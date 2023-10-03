@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SIGEDESP
 build_property.RootNamespace = SIGEDESP
-build_property.ProjectDir = C:\Users\55179\OneDrive\Documentos\SIGEDESP\SIGEDESP\
+build_property.ProjectDir = C:\Users\Aluno\Documents\SIGEDESP\SIGEDESP\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\55179\OneDrive\Documentos\SIGEDESP\SIGEDESP
+build_property.MSBuildProjectDirectory = C:\Users\Aluno\Documents\SIGEDESP\SIGEDESP
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/55179/OneDrive/Documentos/SIGEDESP/SIGEDESP/Views/Home/Index.cshtml]
+[C:/Users/Aluno/Documents/SIGEDESP/SIGEDESP/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/55179/OneDrive/Documentos/SIGEDESP/SIGEDESP/Views/Home/Privacy.cshtml]
+[C:/Users/Aluno/Documents/SIGEDESP/SIGEDESP/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/55179/OneDrive/Documentos/SIGEDESP/SIGEDESP/Views/Shared/Error.cshtml]
+[C:/Users/Aluno/Documents/SIGEDESP/SIGEDESP/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/55179/OneDrive/Documentos/SIGEDESP/SIGEDESP/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Aluno/Documents/SIGEDESP/SIGEDESP/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/55179/OneDrive/Documentos/SIGEDESP/SIGEDESP/Views/tipoDespesa/Cadastrar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGlwb0Rlc3Blc2FcQ2FkYXN0cmFyLmNzaHRtbA==
+[C:/Users/Aluno/Documents/SIGEDESP/SIGEDESP/Views/TipoDespesa/Cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0Rlc3Blc2FcQ2FkYXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/55179/OneDrive/Documentos/SIGEDESP/SIGEDESP/Views/tipoDespesa/Editar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGlwb0Rlc3Blc2FcRWRpdGFyLmNzaHRtbA==
+[C:/Users/Aluno/Documents/SIGEDESP/SIGEDESP/Views/TipoDespesa/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0Rlc3Blc2FcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/55179/OneDrive/Documentos/SIGEDESP/SIGEDESP/Views/tipoDespesa/Excluir.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGlwb0Rlc3Blc2FcRXhjbHVpci5jc2h0bWw=
+[C:/Users/Aluno/Documents/SIGEDESP/SIGEDESP/Views/TipoDespesa/Excluir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0Rlc3Blc2FcRXhjbHVpci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/55179/OneDrive/Documentos/SIGEDESP/SIGEDESP/Views/tipoDespesa/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdGlwb0Rlc3Blc2FcSW5kZXguY3NodG1s
+[C:/Users/Aluno/Documents/SIGEDESP/SIGEDESP/Views/TipoDespesa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0Rlc3Blc2FcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/55179/OneDrive/Documentos/SIGEDESP/SIGEDESP/Views/_ViewImports.cshtml]
+[C:/Users/Aluno/Documents/SIGEDESP/SIGEDESP/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/55179/OneDrive/Documentos/SIGEDESP/SIGEDESP/Views/_ViewStart.cshtml]
+[C:/Users/Aluno/Documents/SIGEDESP/SIGEDESP/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/55179/OneDrive/Documentos/SIGEDESP/SIGEDESP/Views/Shared/_Layout.cshtml]
+[C:/Users/Aluno/Documents/SIGEDESP/SIGEDESP/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xmrmb20zb2

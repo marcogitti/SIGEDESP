@@ -1,24 +1,25 @@
-﻿﻿@Model IEnumerable<TipoDespesaModel>
+﻿@*
+    
+*@﻿
 
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-center mb-5">
-            <h1>Tipo de Despesa</h1>
-            <button>Cadastrar Novo Tipo de Despesa</button>
-        </div>
+@model TipoDespesaModel
 
-        <div class="mb-5 text-center">
-            <h1 class="text-light">Cadastro de Tipo de Despesa</h1>
+    <div class="container bg-dark p-5 rounded-5">
+
+        <div class="mb-5 text-center">m
+            <h1 class="text-light">Tipo de Despesa</h1>
         </div>
 
         <form method="post" asp-controller="TipoDespesa" asp-action="Cadastrar">
             <div class="form-group">
                 <label for="TipoDespesa" class="text-light">Descrição</label>
                 <input type="text" class="form-control" id="TipoDespesa" placeholder="Informe o Tipo de Despesa" />
-                <span class="text-danger"></span>
+                <span class="text-danger" asp-validation-for="tipoDespesa"></span>
             </div>
 
             <div class="d-flex gap-5 mt-5">
-                <button type="submit" class="btn btn-success w-25">Enviar</button>
+                <button type="submit" class="btn btn-success w-50">Enviar</button>
+                <a class="btn btn-primary w-50" asp-asp-controller="TipoDespesa" asp-action="Index">Voltar</a>
             </div>
         </form>
     </div>

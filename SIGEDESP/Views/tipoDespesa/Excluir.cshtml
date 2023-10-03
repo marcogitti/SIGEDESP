@@ -1,6 +1,6 @@
-﻿@model tipoDespesaModel
+﻿@model TipoDespesaModel
 @{
-    ViewData["title"] = "Editar Tipo de Despesa";
+    ViewData["title"] = "Excluir Tipo de Despesa";
 }
 
 <div class="container bg-dark p-5 rounded-5">
@@ -8,20 +8,18 @@
     <div class="mb-5 text-center">
         <h1 class="text-light">Excluir Tipo de Despesa</h1>
     </div>
-    <form method="post" asp-controller="tipoDespesa" asp-action="Excluir">
+    <form method="post" asp-controller="TipoDespesa" asp-action="Excluir">
         <input type="hidden" asp-for="Id" />
 
-        <h2 class="text-light">Tem certeza de que deseja Excluir?</h2>
-
         <div class="form-group">
-            <label for="Descricao" class="text-light">Descrição:</label>
-            <input type="text" class="form-control" asp-for="Descricao" disabled id="Descricao" placeholder="Adicione a Descrição" />
-            <span class="text-danger" asp-validation-for="Descricao"></span>
+            <label for="tipoDespesa" class="text-light">Tipo Despesa</label>
+            <input type="text" class="form-control" asp-for="tipoDespesa" disabled id="tipoDespesa" placeholder="Adicione o Tipo de Despesa" />
+            <span class="text-danger" asp-validation-for="tipoDespesa"></span>
         </div>
 
         <div class="d-flex gap-5 mt-5">
-            <button type="submit" class="btn btn-success w-25">Confirmar alteração</button>
-            <a class="btn btn-primary w-25">Voltar</a>
+            <button type="submit" class="btn btn-success w-25">Confirmar exclusão</button>
+            <a class="btn btn-primary w-25" asp-controller="TipoDespesa" asp-action="Index">Voltar</a>
         </div>
     </form>
 </div>

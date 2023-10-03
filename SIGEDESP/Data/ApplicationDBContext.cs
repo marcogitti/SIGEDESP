@@ -9,7 +9,6 @@ namespace SIGEDESP.Data
         {
         }
 
-        public DbSet<TipoDespesaModel> Descricoes { get; set; }
         public DbSet<TipoDespesaModel> tipoDespesa { get; set; }
     }
 }

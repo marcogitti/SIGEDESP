@@ -1,4 +1,4 @@
-﻿@model tipoDespesaModel
+﻿@model TipoDespesaModel
 @{
     ViewData["title"] = "Editar Tipo de Despesa";
 }
@@ -8,16 +8,17 @@
     <div class="mb-5 text-center">
         <h1 class="text-light">Editar Tipos de Despesa</h1>
     </div>
-    <form method="post" asp-controller="tipoDespesa" asp-action="Editar">
+    <form method="post" asp-controller="TipoDespesa" asp-action="Editar">
         <input type="hidden" asp-for="Id" />
         <div class="form-group">
-            <label for="Descricao" class="text-light">Descrição:</label>
-            <input type="text" class="form-control" id="Descricao" placeholder="Adicione a Descrição" />
+            <label for="TipoDespesa" class="text-light">Tipo Despesa</label>
+            <input type="text" class="form-control" id="tipoDespesa" placeholder="Adicione a Descrição" />
+            <span class="text-danger" asp-validation-for="tipoDespesa"></span>
         </div>
 
         <div class="d-flex gap-5 mt-5">
             <button type="submit" class="btn btn-success w-25">Confirmar alteração</button>
-            <a class="btn btn-primary w-25">Voltar</a>
+            <a class="btn btn-primary w-25" asp-controller="TipoDespesa" asp-action="Index">Voltar</a>
         </div>
     </form>
 </div>
