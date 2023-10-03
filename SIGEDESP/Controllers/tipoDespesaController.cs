@@ -23,7 +23,7 @@ namespace SIGEDESP.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.Descricoes.Add(TipoDespesa);
+                _db.Descricoes.Add(tipoDespesa);
                 _db.SaveChanges();
 
                 return RedirectToAction("Index");
@@ -38,7 +38,7 @@ namespace SIGEDESP.Controllers
             {
                 return NotFound();
             }
-            TipoDespesaModel tipoDespesa = _db.Descricoes.FirstOrDefault(x => x.Id == id);
+            tipoDespesaModel tipoDespesa = _db.Descricoes.FirstOrDefault(x => x.Id == id);
 
             if (tipoDespesa == null)
             {
@@ -48,18 +48,16 @@ namespace SIGEDESP.Controllers
             return View(tipoDespesa);
         }
 
-        [HttpGet]
-        public IActionResult Excluir(int? id)
+        [HttpPost]
+        public IActionResult Excluir(TipoDespesaModel tipoDespesa)
         {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-            TipoDespesaModel tipoDespesa = _db.tipoDespesa.FirstOrDefault(x => x.Id == id);
             if (tipoDespesa == null)
             {
                 return NotFound();
             }
+            _db.tipoDespesa.Remove(tipoDespesa);
+            _db.SaveChanges();
+
             return View(tipoDespesa);
         }
     }

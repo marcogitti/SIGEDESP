@@ -6,13 +6,17 @@
 <div class="container bg-dark p-5 rounded-5">
 
     <div class="mb-5 text-center">
-        <h1 class="text-light">Editar Tipos de Despesa</h1>
+        <h1 class="text-light">Excluir Tipo de Despesa</h1>
     </div>
-    <form method="post" asp-controller="tipoDespesa" asp-action="Editar">
+    <form method="post" asp-controller="tipoDespesa" asp-action="Excluir">
         <input type="hidden" asp-for="Id" />
+
+        <h2 class="text-light">Tem certeza de que deseja Excluir?</h2>
+
         <div class="form-group">
             <label for="Descricao" class="text-light">Descrição:</label>
-            <input type="text" class="form-control" id="Descricao" placeholder="Adicione a Descrição" />
+            <input type="text" class="form-control" asp-for="Descricao" disabled id="Descricao" placeholder="Adicione a Descrição" />
+            <span class="text-danger" asp-validation-for="Descricao"></span>
         </div>
 
         <div class="d-flex gap-5 mt-5">
